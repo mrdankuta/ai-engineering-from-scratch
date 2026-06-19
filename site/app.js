@@ -241,7 +241,7 @@
       html += '<span class="modal-lesson-status ' + statusClass + '"' + (userComplete ? ' title="You completed this lesson"' : '') + '></span>';
       if (l.url) {
         if (lessonPath) {
-          html += '<a href="lesson.html?path=' + lessonPath + '">' + escapeHtml(l.name) + '</a>';
+          html += '<a href="lesson.html?path=' + encodeURIComponent(lessonPath) + '">' + escapeHtml(l.name) + '</a>';
         } else {
           html += '<a href="' + l.url + '" target="_blank" rel="noopener">' + escapeHtml(l.name) + '</a>';
         }
