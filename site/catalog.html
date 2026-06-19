@@ -441,7 +441,7 @@
             if (r.lessonPath) {
               html += '<td><a href="lesson.html?path=' + r.lessonPath + '">' + escapeHtml(r.name) + '</a>';
               if (r.url) {
-                html += ' <a href="' + r.url + '" target="_blank" rel="noopener" class="catalog-github-link" title="View source on GitHub">↗</a>';
+                html += ' <a href="' + r.url + '" target="_blank" rel="noopener" class="catalog-github-link" title="View source on GitHub" aria-label="Open lesson source on GitHub (new tab)">↗</a>';
               }
               html += '</td>';
             } else if (r.url) {
