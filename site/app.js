@@ -246,7 +246,7 @@
           html += '<a href="' + l.url + '" target="_blank" rel="noopener">' + escapeHtml(l.name) + '</a>';
         }
       } else {
-        html += '<a>' + escapeHtml(l.name) + '</a>';
+        html += '<span>' + escapeHtml(l.name) + '</span>';
       }
       html += '<span class="modal-lesson-type" data-type="' + escapeHtml(l.type) + '"' + (l.combines ? ' title="Combines: ' + escapeHtml(l.combines) + '"' : '') + '>' + escapeHtml(l.type) + '</span>';
       html += '<span class="modal-lesson-lang">' + escapeHtml(l.lang) + '</span>';
