@@ -439,7 +439,7 @@
             html += '<tr>';
             html += '<td><span class="catalog-phase-label">' + String(r.phase).padStart(2, '0') + '</span></td>';
             if (r.lessonPath) {
-              html += '<td><a href="lesson.html?path=' + r.lessonPath + '">' + escapeHtml(r.name) + '</a>';
+              html += '<td><a href="lesson.html?path=' + encodeURIComponent(r.lessonPath) + '">' + escapeHtml(r.name) + '</a>';
               if (r.url) {
                 html += ' <a href="' + r.url + '" target="_blank" rel="noopener" class="catalog-github-link" title="View source on GitHub" aria-label="Open lesson source on GitHub (new tab)">↗</a>';
               }
